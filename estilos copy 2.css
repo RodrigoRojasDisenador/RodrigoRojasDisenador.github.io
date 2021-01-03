@@ -1,0 +1,173 @@
+*
+
+{
+    margin: 0;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background: rgb(0, 0, 0);
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+
+    /* flex */
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+
+header {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px;
+
+    /* flex */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+header .logo {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+header .logo a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 60px;
+
+}
+
+header .logo img {
+    width: 60px;
+    vertical-align: top;
+}
+
+
+header nav {
+    width: 60%;
+    /*flex*/
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav a {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+
+    /*flex*/
+    flex-grow: 1;
+
+}
+
+header nav a:hover {
+    background: rgb(20, 20, 20);
+}
+
+.main {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+
+    flex: 1 1 90%;
+
+}
+
+.main article {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.main article:nth-last-child(1){
+   
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    border-bottom: none;
+}
+
+
+footer {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    padding: 10px;
+
+    /*flex*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    .contenedor {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header .logo {
+        margin: 20px 0;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-widht: 600px) {
+    
+
+    portada {
+        width: 600px;
+        justify-content: center;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-widht: 400px) {
+
+    portada {
+        width: 400px;
+        justify-content: center;
+    }
+
+    header {
+        width: 80%;
+    }
+}
